@@ -1,0 +1,17 @@
+<appian-plugin name="RabbitMessageServices" key="com.appiancorp.cs.plugin.rabbitMQServices">
+
+  <plugin-info>
+    <description>Allows the creation of RabbitMQ Consumers and Producers to work with Appian Process Models.</description>
+    <vendor name="Appian Corporation" url="https://www.appian.com" />
+    <version>1.1.10</version>
+    <application-version min="17.2" />
+  </plugin-info>
+
+  <smart-service name="Rabbit Message Consumer" key="RabbitMessageConsumer"
+    class="com.appiancorp.cs.plugin.rabbitMQServices.smartservice.RabbitConsumer" />
+
+
+  <smart-service name="Rabbit Message Producer" key="RabbitMessageProducer"
+    class="com.appiancorp.cs.plugin.rabbitMQServices.smartservice.RabbitProducer" />
+
+</appian-plugin>
